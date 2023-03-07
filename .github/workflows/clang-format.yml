@@ -20,7 +20,7 @@ jobs:
       - name: Run clang-format
         run: |
           clang-format -version
-          clang-format -style=Google -i $(find . -type f -name "*.c" -or -name "*.h")
+          clang-format -style=Chromium -i $(find . -type f -name "*.c" -or -name "*.h")
 
       - name: Commit formatted files
         run: |
